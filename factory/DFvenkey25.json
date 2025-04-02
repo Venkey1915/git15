@@ -1,0 +1,9 @@
+{
+	"name": "DFvenkey25",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a8ce9b42-4b89-4e14-8df5-b786fe8ced6b",
+		"tenantId": "afbee8d6-6502-4f15-867c-d2478cc32586"
+	}
+}
