@@ -1,0 +1,44 @@
+{
+	"name": "File1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"P_container": {
+				"type": "string"
+			},
+			"P_directory": {
+				"type": "string"
+			},
+			"P_Filename": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().P_Filename",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().P_directory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().P_container",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": "\t",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
