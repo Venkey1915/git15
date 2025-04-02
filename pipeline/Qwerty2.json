@@ -184,6 +184,8 @@
 			{
 				"name": "Delete1",
 				"type": "Delete",
+				"state": "Inactive",
+				"onInactiveMarkAs": "Succeeded",
 				"dependsOn": [
 					{
 						"activity": "data2",
@@ -231,15 +233,15 @@
 		"parameters": {
 			"PPinput": {
 				"type": "string",
-				"defaultValue": "project1/input"
+				"defaultValue": "input"
 			},
 			"PPoutput": {
 				"type": "string",
-				"defaultValue": "project1/output"
+				"defaultValue": "output"
 			},
 			"PPArchieve": {
 				"type": "string",
-				"defaultValue": "project1/Archieve"
+				"defaultValue": "Archieve"
 			},
 			"PPfilename": {
 				"type": "string",
@@ -247,7 +249,7 @@
 			},
 			"PPContainer": {
 				"type": "string",
-				"defaultValue": "savenkeyhiera"
+				"defaultValue": "project1"
 			}
 		},
 		"annotations": []
